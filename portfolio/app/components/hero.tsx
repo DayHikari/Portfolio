@@ -1,16 +1,9 @@
 "use client";
 
-// // Plan
-// Set location of a number of diamonds within the grid
-// Create an array of strings consisting of bg-black and set as state - now all diamonds are black
-// Create a useEffect function
-// Within the useEffect, set up an interval timer function
-// Within the interval function, set up an array of length equal to the state array containing random number (1 or 0)
-// Use the setState function to map through the previous state array and set the bg color dependent on whether the random number at the same index
-//    as the number array is 1 or 0
 
 //Imports
 import { useState, useEffect } from "react";
+import HeroText from "./hero_components/HeroText";
 
 // Hero function
 export default function Hero() {
@@ -43,10 +36,7 @@ export default function Hero() {
 
   return (
     <section className="grid gap-4 grid-cols-12 grid-rows-6 h-screen bg-black">
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center">
-        <h1 className="text-6xl p-5 bg-black">My name is David Mason</h1>
-        <h2 className="text-4xl bg-black p-5 ">Welcome to my Portfolio</h2>
-      </div>
+      <HeroText />
       <div
         className={`w-2 h-2 ${colour[0]} rotate-45 self-center justify-self-center col-start-1 row-start-1`}
       ></div>
