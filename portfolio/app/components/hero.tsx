@@ -5,6 +5,7 @@
 import { useState, useEffect } from "react";
 import HeroText from "./hero_components/HeroText";
 import HeroDiamond from "./hero_components/HeroDiamond";
+import Pattern from "./hero_components/Pattern";
 
 // Hero function
 export default function Hero() {
@@ -44,9 +45,21 @@ export default function Hero() {
     // Use effct is dependent on colour state
   }, [colour]);
 
+  // Function to generate the pattern divs
+  function generatePattern() {
+    const compArray = []
+    for(let i = 1; i <= 12; i++) {
+      for(let j = 1; j <= 6; j++) {
+        compArray.push(<Pattern key={`${i}${j}`} column={`col-start-${i}`} row={`row-start-${j}`}/>)
+      }
+    }
+    return compArray;
+  }
+
   return (
-    <section className="grid gap-4 grid-cols-12 grid-rows-6 h-screen bg-black">
+    <section className="grid gap- grid-cols-12 grid-rows-6 h-screen bg-black">
       <HeroText />
+      {generatePattern()}
       {colour.map((elem, index) => (<HeroDiamond key={index} colour={elem} column={columnArray[index]} row={rowArray[index]} />))}
     </section>
   );
