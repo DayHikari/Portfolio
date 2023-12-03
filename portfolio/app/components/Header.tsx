@@ -1,13 +1,12 @@
 // Imports
-import Image from "next/image"
+
+import Logo from "./header_components/logo";
 
 // Component function for the header
 export default function Header() {
     return (
         <header className="w-screen h-12 bg-zinc-800 flex flex-col items-center">
-            <div className="w-12 h-12 bg-zinc-300 rounded-full">
-            <Image src="/icon.png" alt="Personal logo image" width="50" height="50" />
-            </div>
+            <Logo />
         </header>
     )
 }
