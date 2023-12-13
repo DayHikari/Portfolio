@@ -5,9 +5,12 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 
 export default function ThemeSwitcher() {
+  // State for whether the page has been mounted
   const [mounted, setMounted] = useState(false);
+  // Colour Theme state
   const { theme, setTheme } = useTheme();
 
+  // Prevents hydration issues by returning nothing until after the page has been mounted client site
   useEffect(() => {
     setMounted(true);
   }, []);
