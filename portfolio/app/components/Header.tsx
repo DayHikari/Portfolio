@@ -1,15 +1,15 @@
 // Imports
 
+import ThemeSwitcher from "../ThemeSwitcher";
 import Logo from "./header_components/Logo";
-import ModeToggle from "./header_components/ModeToggle";
 
 // Component function for the header
 export default function Header() {
     return (
-        <header className="w-screen h-12 bg-zinc-800 flex justify-around items-center">
-            <ModeToggle />
-            <Logo />
+        <header className="w-screen h-14 p-1 bg-zinc-800 grid grid-cols-3">
             <div></div>
+            <Logo />
+            <ThemeSwitcher />
         </header>
     )
 }
