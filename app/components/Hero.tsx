@@ -34,7 +34,7 @@ export default function Hero() {
       // Set color array values to the bg-color dependant on if the associated binaryArray value is 1 or 0
       setColour((prev) =>
         prev.map((elem, index) =>
-          binaryArray[index] === 1 ? "bg-zinc-400" : "bg-black"
+          binaryArray[index] === 1 ? "bg-zinc-300" : "bg-black"
         )
       );
 
