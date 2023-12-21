@@ -14,7 +14,7 @@ export const projectDetails: Array<Project> = [
         title: "100 Days of Code Blog",
         details: "I decided to make the 100 Days of Code Blog as a means to practice creating an API using MVC architecture that would take data from an external database. The database was a PostgreSQL database hosted on ElephantSQL and the front-end used HTML, CSS and JavaScript. The API was also set up as a REST API and as such can be called from, added and updated to as well as deleted from which is controlled through a basic log in system that confirms credentials against the database.",
         techStack: "JavaScript, HTML, CSS, Node.js, PostgreSQL, Rest API",
-        url: undefined,
+        url: "https://100daysofcodeblog.netlify.app/",
         photo: "/images/100_days_of_code_blog.png"
     },
     {
