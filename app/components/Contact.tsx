@@ -24,7 +24,7 @@ export default function Contact() {
           />
           <p className="ml-2 text-lg sm:text-2xl">David_Mason_@hotmail.co.uk</p>
         </a>
-        <a href="https://www.linkedin.com/in/davidianmason1702/" className="flex items-end w-fit mb-2">
+        <a href="https://www.linkedin.com/in/davidianmason1702/" target="_blank" className="flex items-end w-fit mb-2">
           <Image
             src={"/images/linked-in.svg"}
             alt="Email icon"
@@ -34,7 +34,7 @@ export default function Contact() {
           />
           <p className="ml-2 text-lg sm:text-2xl">DavidIanMason1702</p>
         </a>
-        <a href="https://github.com/DayHikari" className="flex items-end w-fit">
+        <a href="https://github.com/DayHikari" target="_blank" className="flex items-end w-fit">
           <Image
             src={"/images/github.svg"}
             alt="Email icon"
