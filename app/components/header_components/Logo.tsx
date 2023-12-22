@@ -1,11 +1,19 @@
 // Imports
-import Image from "next/image"
+import Image from "next/image";
+import Link from "next/link";
 
 // Component function for the header logo
 export default function Logo() {
   return (
     <div className="w-12 h-12 bg-zinc-300 rounded-full justify-self-center">
-      <Image src="/icon.png" alt="Personal logo image" width="50" height="50" />
+      <Link href={"/"}>
+        <Image
+          src="/icon.png"
+          alt="Personal logo image"
+          width="50"
+          height="50"
+        />
+      </Link>
     </div>
   );
 }

@@ -41,4 +41,23 @@ export const projectDetails: Array<Project> = [
         url: "https://dayhikari.github.io/Calculator/",
         photo: "/images/calculator.png"
     },
-]
+];
+
+export const homepageProjects: Array<Project> = [
+    {
+        id: 1,
+        title: "BrumAI Website",
+        details: "BrumAI is a dynamic community located in Birmingham that is dedicated to fostering innovation, collaboration, and learning in the field of Artificial Intelligence and was the client for whom this project was developed. BrumAI's problem was that their website at the time did not demonstrate who their group was and what they had to offer. As such, they requested that a new website be made that better displayed everything that BrumAI is; which is where myself and my team of 5 other School of Code bootcampers come in. With a timeline of 4-weeks, myself and my team developed a new website for BrumAI using Next.js 14 alongside Tailwind.CSS for the styling to the satisfaction of the client. The website supports a Postgres database hosted with SupaBase that stores all event information for BrumAI which is called by the website before being dynamically displayed. The website is designed to be responsive allowing it to be viewed easily on any device. This project was a great experience of building a modern website and posed a number of challenges that were fun to tackle!",
+        techStack: "JavaScript, JSZ, React, Next.js, PostgreSQL, Tailwind.CSS, MUI, AntD",
+        url: "https://brum-ai-test.netlify.app/",
+        photo: "/images/brumai_website.png"
+    },
+    {
+        id: 2,
+        title: "Memory Echo",
+        details: "A problem that Bootcampers in the School of Code face is that the intense pace of the course makes it difficult to revise and remember all of the informaion taught. Multiple topics are taught each day and it is inevitable that something will fall through the cracks and be forgotten. To address this problem, myself and my team developed Memory Echo: The Spaced Repetition App! Memory Echo allows users to input a topic/method name and description which will be stored in a PostgreSQL database. Memory Echo will then used the space repetition method to remind users of topics they need to study over an increasing gap in time, much like how an echo spaces out over time. The Frontend of the app was made using JavaScript, HTML and CSS while the backend uses Node.js, REST APIs and PostgreSQL. NOTE: The database takes a moment to spin up on the website, please refresh after a minute or two.",
+        techStack: "JavaScript, HTML, CSS, PostgreSQL, Node.js, REST API",
+        url: "https://memoryecho.vercel.app/",
+        photo: "/images/memory_echo.png"
+    },
+];

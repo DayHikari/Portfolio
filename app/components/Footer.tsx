@@ -4,7 +4,7 @@ export default function Footer() {
     let year:number = d.getFullYear()
     return (
         <footer className="h-28 bg-orange-500 dark:bg-zinc-800 flex flex-col items-center justify-center">
-            <h4 className="font-bold text-lg">Designed and built in <span className="text-blue-700">Next.JS</span> by <span className="text-blue-700">David Mason</span></h4>
+            <h4 className="font-bold text-lg w-9/12 text-center mb-2">Designed and built in <span className="text-blue-700">Next.JS</span> by <span className="text-blue-700">David Mason</span></h4>
             <h4 >&copy; {year} All rights reserved</h4>
         </footer>
     )
