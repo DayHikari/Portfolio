@@ -20,7 +20,7 @@ export default function AboutMe() {
   return (
     <section className="bg-zinc-300 dark:bg-black flex flex-col">
       <UpperDivider />
-      <article className="w-8/12 self-center my-5">
+      <article className="w-8/12 self-center my-5 flex flex-col items-center">
         <h1 className="w-64 py-3 text-5xl md:text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-950 dark:from-amber-700 via-zinc-600 dark:via-amber-500 to-zinc-950 dark:to-amber-700">
           About Me
         </h1>
