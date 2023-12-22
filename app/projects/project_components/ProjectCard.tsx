@@ -32,7 +32,7 @@ export default function ProjectCard({ projectDetail }: promptObject) {
             </h2>
             <ProjectButton url={projectDetail.url} id={projectDetail.id} />
           </div>
-          <p className="text-xl">{projectDetail.details}</p>
+          <p className="text-lg sm:text-xl lg:text-2xl">{projectDetail.details}</p>
           <p className="py-3 italic">TechStack: {projectDetail.techStack}</p>
           <span className="2xl:hidden"><ProjectButton url={projectDetail.url} id={projectDetail.id} /></span>
         </div>
