@@ -19,7 +19,7 @@ export default function ProjectCard({ projectDetail }: promptObject) {
   return (
     <>
       <article
-        className={`flex flex-col flex-col-reverse 2xl:grid ${gridColumns} w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 2xl:w-7/12 self-center my-20 rounded-3xl`}
+        className={`flex flex-col flex-col-reverse 2xl:grid ${gridColumns} w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 2xl:w-7/12 self-center my-16 rounded-3xl`}
       >
         <div
           className={`flex flex-col justify-between items-center py-5 px-5 ${textGrid} `}
@@ -27,19 +27,19 @@ export default function ProjectCard({ projectDetail }: promptObject) {
           <div
             className={`hidden 2xl:flex ${flexDirection} items-center justify-between w-10/12`}
           >
-            <h2 className="text-4xl py-3 font-semibold">
+            <h2 className="text-5xl py-3 font-semibold">
               {projectDetail.title}
             </h2>
             <ProjectButton url={projectDetail.url} id={projectDetail.id} />
           </div>
-          <p className="">{projectDetail.details}</p>
+          <p className="text-xl">{projectDetail.details}</p>
           <p className="py-3 italic">TechStack: {projectDetail.techStack}</p>
           <span className="2xl:hidden"><ProjectButton url={projectDetail.url} id={projectDetail.id} /></span>
         </div>
         <div
           className={`${imageGrid} flex flex-col justify-center items-center p-5`}
         >
-          <h2 className="text-4xl py-3 font-semibold 2xl:hidden mb-3">{projectDetail.title}</h2>
+          <h2 className="text-5xl py-3 font-semibold 2xl:hidden mb-3">{projectDetail.title}</h2>
           <Image
             src={projectDetail.photo}
             alt={`Photo of ${projectDetail.title}`}
