@@ -14,7 +14,7 @@ export default function Navigation() {
           Projects
         </button>
       </Link>
-      <a download href="/david_mason_cv.pdf" target="_blank">
+      <a download href="/david_masons_cv.pdf" target="_blank">
         <button className="min-w-[70px] hidden sm:block rounded-full p-2 hover:bg-orange-600 hover:text-white hover:dark:bg-zinc-600 hover:dark:text-orange-500">
           CV
         </button>
