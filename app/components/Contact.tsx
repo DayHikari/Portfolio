@@ -12,7 +12,7 @@ export default function Contact() {
         </h1>
         <p className="text-xl sm:text-2xl text-center mb-4">
           If you would like to contact me about my work or are looking for an
-          enthusiastic new developer then feel free to contact me!
+          enthusiastic new developer then feel free to reach out!
         </p>
         <a href="mailto:David_Mason_@hotmail.co.uk" className="flex items-end w-fit mb-2">
           <Image

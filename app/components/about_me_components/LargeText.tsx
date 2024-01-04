@@ -43,7 +43,7 @@ export default function LargeText() {
             weeks. The course was certainly fast-paced and from week 3 onward
             everything was new which is when it got really fun. Everyday we
             learnt a new topic before putting it into practice during workshops
-            and then creaitng something using what we had learnt that week
+            and then creating something using what we had learnt that week
             during the weekly Hackathon. I learnt so much during the course and
             have thoroughly enjoyed the 1 week and 4 week projects but am now
             excited to start applying what I have learnt so far in the workplace
