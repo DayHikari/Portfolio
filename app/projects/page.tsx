@@ -3,7 +3,7 @@ import UpperDivider from "../components/dividers/UpperDivider";
 import { projectDetails } from "../data";
 import ProjectCard from "./project_components/ProjectCard";
 
-export default function ProjectPage() {
+export default function ProjectPage(): JSX.Element {
   return (
     <main className="bg-zinc-300 dark:bg-black">
       <UpperDivider />

@@ -6,7 +6,7 @@ import UpperDivider from "./dividers/UpperDivider";
 import ShortText from "./about_me_components/ShortText";
 import ShowButton from "./about_me_components/ShowButton";
 
-export default function AboutMe() {
+export default function AboutMe(): JSX.Element {
   const [showAll, setShowAll] = useState<Boolean>(false);
 
   const showMore = () => {

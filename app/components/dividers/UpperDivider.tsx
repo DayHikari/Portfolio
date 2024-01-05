@@ -1,4 +1,4 @@
-export default function UpperDivider() {
+export default function UpperDivider(): JSX.Element {
   return (
     <>
       <div className="h-0.5 bg-gradient-to-b from-orange-500 to-orange-400 dark:from-zinc-800 dark:to-zinc-800"></div>

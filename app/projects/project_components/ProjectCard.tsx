@@ -5,7 +5,9 @@ import ProjectButton from "./ProjectButton";
 interface promptObject {
   projectDetail: Project;
 }
-export default function ProjectCard({ projectDetail }: promptObject) {
+export default function ProjectCard({
+  projectDetail,
+}: promptObject): JSX.Element {
   const gridColumns: string =
     projectDetail.id % 2 === 1
       ? "2xl:grid-cols-[2fr_1fr]"
@@ -32,14 +34,20 @@ export default function ProjectCard({ projectDetail }: promptObject) {
             </h2>
             <ProjectButton url={projectDetail.url} id={projectDetail.id} />
           </div>
-          <p className="text-lg sm:text-xl lg:text-2xl">{projectDetail.details}</p>
+          <p className="text-lg sm:text-xl lg:text-2xl">
+            {projectDetail.details}
+          </p>
           <p className="py-3 italic">TechStack: {projectDetail.techStack}</p>
-          <span className="2xl:hidden"><ProjectButton url={projectDetail.url} id={projectDetail.id} /></span>
+          <span className="2xl:hidden">
+            <ProjectButton url={projectDetail.url} id={projectDetail.id} />
+          </span>
         </div>
         <div
           className={`${imageGrid} flex flex-col justify-center items-center p-5`}
         >
-          <h2 className="text-5xl py-3 font-semibold 2xl:hidden mb-3">{projectDetail.title}</h2>
+          <h2 className="text-5xl py-3 font-semibold 2xl:hidden mb-3">
+            {projectDetail.title}
+          </h2>
           <Image
             src={projectDetail.photo}
             alt={`Photo of ${projectDetail.title}`}

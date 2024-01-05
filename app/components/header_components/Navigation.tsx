@@ -2,7 +2,7 @@ import Link from "next/link";
 import MenuDropdown from "./MenuDropdown";
 import ContactDropdown from "./ContactDropdown";
 
-export default function Navigation() {
+export default function Navigation(): JSX.Element {
   return (
     <nav className="flex xs:items-center text-xl font-bold w-full">
       <div className="xs:items-center text-xl font-bold w-full hidden lg:flex">

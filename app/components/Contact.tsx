@@ -2,7 +2,7 @@ import Image from "next/image";
 import LowerDivider from "./dividers/LowerDivider";
 import UpperDivider from "./dividers/UpperDivider";
 
-export default function Contact() {
+export default function Contact(): JSX.Element {
   return (
     <section className="bg-zinc-300 dark:bg-black flex flex-col">
       <UpperDivider />
@@ -14,7 +14,10 @@ export default function Contact() {
           If you would like to contact me about my work or are looking for an
           enthusiastic new developer then feel free to reach out!
         </p>
-        <a href="mailto:David_Mason_@hotmail.co.uk" className="flex items-end w-fit mb-2">
+        <a
+          href="mailto:David_Mason_@hotmail.co.uk"
+          className="flex items-end w-fit mb-2"
+        >
           <Image
             src={"/images/email.png"}
             alt="Email icon"
@@ -24,7 +27,11 @@ export default function Contact() {
           />
           <p className="ml-2 text-lg sm:text-2xl">David_Mason_@hotmail.co.uk</p>
         </a>
-        <a href="https://www.linkedin.com/in/davidianmason1702/" target="_blank" className="flex items-end w-fit mb-2">
+        <a
+          href="https://www.linkedin.com/in/davidianmason1702/"
+          target="_blank"
+          className="flex items-end w-fit mb-2"
+        >
           <Image
             src={"/images/linked-in.svg"}
             alt="Email icon"
@@ -34,7 +41,11 @@ export default function Contact() {
           />
           <p className="ml-2 text-lg sm:text-2xl">DavidIanMason1702</p>
         </a>
-        <a href="https://github.com/DayHikari" target="_blank" className="flex items-end w-fit">
+        <a
+          href="https://github.com/DayHikari"
+          target="_blank"
+          className="flex items-end w-fit"
+        >
           <Image
             src={"/images/github.svg"}
             alt="Email icon"

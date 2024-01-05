@@ -6,7 +6,11 @@ interface promptObject {
 }
 // Component function for the diamonds in the hero section.
 // Takes the colour of the diamond as a prop
-export default function HeroDiamond({ colour, column, row }: promptObject) {
+export default function HeroDiamond({
+  colour,
+  column,
+  row,
+}: promptObject): JSX.Element {
   return (
     <>
       <div

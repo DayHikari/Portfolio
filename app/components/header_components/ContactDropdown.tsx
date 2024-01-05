@@ -2,8 +2,9 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
 
-export default function ContactDropdown() {
-  const [contactDropdownOpen, setContactDropdownOpen] = useState<Boolean>(false);
+export default function ContactDropdown(): JSX.Element {
+  const [contactDropdownOpen, setContactDropdownOpen] =
+    useState<Boolean>(false);
   const contactRef = useRef(null);
 
   const handleOnClick = (): void => {
@@ -25,7 +26,8 @@ export default function ContactDropdown() {
         ref={contactRef}
         className="w-28 rounded-full p-2 hover:bg-orange-600 hover:text-white hover:dark:bg-zinc-600 hover:dark:text-orange-500"
       >
-        Contact {contactDropdownOpen ? <span>&uArr;</span> : <span>&dArr;</span>}
+        Contact{" "}
+        {contactDropdownOpen ? <span>&uArr;</span> : <span>&dArr;</span>}
       </button>
       {contactDropdownOpen && (
         <div className="bg-orange-500 dark:bg-zinc-800 z-10 absolute ml-12 top-16 rounded-lg shadow-lg w-fit">
