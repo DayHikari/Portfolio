@@ -38,9 +38,8 @@ export default function ContactDropdown() {
                 <Image
                   src={"/images/email.png"}
                   alt="Email icon"
-                  width={32}
-                  height={32}
-                  className="sm:w-[50px]"
+                  width={50}
+                  height={50}
                 />
               </a>
             </li>
@@ -53,9 +52,8 @@ export default function ContactDropdown() {
                 <Image
                   src={"/images/linked-in.svg"}
                   alt="Email icon"
-                  width={32}
-                  height={32}
-                  className="sm:w-[50px]"
+                  width={50}
+                  height={50}
                 />
               </a>
             </li>
@@ -68,9 +66,8 @@ export default function ContactDropdown() {
                 <Image
                   src={"/images/github.svg"}
                   alt="Email icon"
-                  width={32}
-                  height={32}
-                  className="sm:w-[50px]"
+                  width={50}
+                  height={50}
                 />
               </a>
             </li>

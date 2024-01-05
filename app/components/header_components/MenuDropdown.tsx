@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRef, useState } from "react";
+import MenuDropdownContact from "./MenuDropdownContact";
 
 export default function MenuDropdown() {
   const [dropdownOpen, setDropdownOpen] = useState<Boolean>(false);
@@ -30,7 +31,7 @@ export default function MenuDropdown() {
         Menu 	{dropdownOpen ? <span>&uArr;</span> : <span>&dArr;</span>}
       </button>
       {dropdownOpen && (
-        <div className="bg-orange-500 dark:bg-zinc-800 z-10 absolute left-3 top-16 rounded-lg shadow-lg w-fit">
+        <div className="bg-orange-500 dark:bg-zinc-800 z-10 absolute left-3 top-16 rounded-lg shadow-lg w-32">
           <ul className="w-34 p-2 flex flex-col items-center z-50">
             <li>
               <Link href={"/"} className="my-2 z-50">
@@ -46,9 +47,10 @@ export default function MenuDropdown() {
                 </button>
               </Link>
             </li>
+            <MenuDropdownContact />
             <li>
             <a download href="/david_masons_cv.pdf" target="_blank">
-              <button className="min-w-[100px] rounded-full p-2 hover:bg-orange-600 hover:text-white hover:dark:bg-zinc-600 hover:dark:text-orange-500 my-2 z-50">
+              <button className="min-w-[100px] rounded-full p-2 hover:bg-orange-600 hover:text-white hover:dark:bg-zinc-600 hover:dark:text-orange-500  z-50">
                 CV
               </button>
               </a>
