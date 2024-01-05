@@ -15,7 +15,7 @@ export default function MenuDropdown(): JSX.Element {
 
   if (typeof window !== "undefined") {
     window.addEventListener("click", (e) => {
-      if (e.target !== menuRef.current) {
+      if (e.target !== menuRef.current && e.target !== dropdownRef.current) {
         setDropdownOpen(false);
       }
     });
@@ -31,7 +31,7 @@ export default function MenuDropdown(): JSX.Element {
         Menu {dropdownOpen ? <span>&uArr;</span> : <span>&dArr;</span>}
       </button>
       {dropdownOpen && (
-        <div className="bg-orange-500 dark:bg-zinc-800 z-10 absolute left-3 top-16 rounded-lg shadow-lg w-32">
+        <div ref={dropdownRef} className="bg-orange-500 dark:bg-zinc-800 z-10 absolute left-3 top-16 rounded-lg shadow-lg w-32">
           <ul className="w-34 p-2 flex flex-col items-center z-50">
             <li>
               <Link href={"/"} className="my-2 z-50">
