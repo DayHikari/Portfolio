@@ -14,14 +14,14 @@ export default function MenuDropdown() {
 
   if (typeof window !== "undefined") {
     window.addEventListener("click", (e) => {
-      if (e.target !== menuRef.current && e.target !== dropdownRef.current) {
+      if (e.target !== menuRef.current) {
         setDropdownOpen(false);
       }
     });
   };
 
   return (
-    <div className="sm:hidden">
+    <div className="lg:hidden">
       <button
         onClick={() => handleOnClick()}
         ref={menuRef}
