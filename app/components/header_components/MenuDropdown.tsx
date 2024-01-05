@@ -18,7 +18,7 @@ export default function MenuDropdown() {
         setDropdownOpen(false);
       }
     });
-  }
+  };
 
   return (
     <div className="sm:hidden">
@@ -27,13 +27,13 @@ export default function MenuDropdown() {
         ref={menuRef}
         className="w-24 rounded-full p-2 hover:bg-orange-600 hover:text-white hover:dark:bg-zinc-600 hover:dark:text-orange-500"
       >
-        Menu
+        Menu 	{dropdownOpen ? <span>&uArr;</span> : <span>&dArr;</span>}
       </button>
       {dropdownOpen && (
-        <div className="bg-orange-500 dark:bg-zinc-800 z-50 absolute left-3 top-16 rounded-lg shadow-lg w-fit">
-          <ul className="w-40 p-2 flex flex-col items-center">
+        <div className="bg-orange-500 dark:bg-zinc-800 z-10 absolute left-3 top-16 rounded-lg shadow-lg w-fit">
+          <ul className="w-34 p-2 flex flex-col items-center z-50">
             <li>
-              <Link href={"/"} className="my-2">
+              <Link href={"/"} className="my-2 z-50">
                 <button className="min-w-[100px] rounded-full p-2 hover:bg-orange-600 hover:text-white hover:dark:bg-zinc-600 hover:dark:text-orange-500">
                   Home
                 </button>
@@ -47,9 +47,11 @@ export default function MenuDropdown() {
               </Link>
             </li>
             <li>
-              <button className="min-w-[70px] rounded-full p-2 hover:bg-orange-600 hover:text-white hover:dark:bg-zinc-600 hover:dark:text-orange-500 my-2">
+            <a download href="/david_masons_cv.pdf" target="_blank">
+              <button className="min-w-[100px] rounded-full p-2 hover:bg-orange-600 hover:text-white hover:dark:bg-zinc-600 hover:dark:text-orange-500 my-2 z-50">
                 CV
               </button>
+              </a>
             </li>
           </ul>
         </div>

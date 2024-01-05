@@ -13,7 +13,7 @@ export default function HeroDiamond({ colour, column, row }: promptObject) {
         className={`w-2 lg:w-3 h-2 lg:h-3 ${colour} rotate-45 self-center justify-self-center ${column} ${row} transition-all duration-200`}
       ></div>
       <div
-        className={`w-2 lg:w-3 h-2 lg:h-3 ${colour}  self-center justify-self-center ${column} ${row} transition-all duration-200`}
+        className={`w-2 lg:w-3 h-2 lg:h-3 ${colour} self-center justify-self-center ${column} ${row} transition-all duration-200`}
       ></div>
     </>
   );

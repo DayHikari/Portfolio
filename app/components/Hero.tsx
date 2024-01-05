@@ -58,7 +58,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="grid gap- grid-cols-12 grid-rows-6 h-screen bg-black">
+    <section className="grid gap- grid-cols-12 grid-rows-6 h-screen bg-black mt-14">
       <HeroText />
       {generatePattern()}
       {colour.map((elem, index) => (<HeroDiamond key={index} colour={elem} column={columnArray[index]} row={rowArray[index]} />))}
