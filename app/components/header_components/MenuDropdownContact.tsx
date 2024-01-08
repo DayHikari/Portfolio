@@ -1,6 +1,30 @@
+"use client"
+import { useTheme } from "next-themes";
 import Image from "next/image";
 
 export default function MenuDropdownContact(): JSX.Element {
+  const {resolvedTheme} = useTheme();
+  let emailSrc:string;
+  let linkedInSrc:string;
+  let gitHubSrc:string;
+  switch (resolvedTheme) {
+    case "light":
+      emailSrc = "/images/email-black.png";
+      linkedInSrc = "/images/linkedin-black.svg";
+      gitHubSrc = "/images/github-black.svg";
+      break;
+    case "dark":
+      emailSrc = "/images/email.png";
+      linkedInSrc = "/images/linked-in.svg";
+      gitHubSrc = "/images/github.svg";
+      break;
+    default:
+      emailSrc = "/images/email.png";
+      linkedInSrc = "/images/linked-in.svg";
+      gitHubSrc = "/images/github.svg";
+      break;
+  };
+
   return (
     <li className="flex flex-wrap text-center justify-center">
         <h3 className="w-full mb-1">Contact:</h3>
@@ -9,7 +33,7 @@ export default function MenuDropdownContact(): JSX.Element {
         className="w-fit"
       >
         <Image
-          src={"/images/email.png"}
+          src={emailSrc}
           alt="Email icon"
           width={30}
           height={30}
@@ -21,7 +45,7 @@ export default function MenuDropdownContact(): JSX.Element {
         className="w-fit"
       >
         <Image
-          src={"/images/linked-in.svg"}
+          src={linkedInSrc}
           alt="Email icon"
           width={30}
           height={30}
@@ -34,7 +58,7 @@ export default function MenuDropdownContact(): JSX.Element {
         className="w-fit"
       >
         <Image
-          src={"/images/github.svg"}
+          src={gitHubSrc}
           alt="Email icon"
           width={30}
           height={30}

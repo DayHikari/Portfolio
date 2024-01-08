@@ -1,4 +1,5 @@
 "use client";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useRef, useState } from "react";
 
@@ -6,6 +7,28 @@ export default function ContactDropdown(): JSX.Element {
   const [contactDropdownOpen, setContactDropdownOpen] =
     useState<Boolean>(false);
   const contactRef = useRef(null);
+
+  const {resolvedTheme} = useTheme();
+  let emailSrc:string;
+  let linkedInSrc:string;
+  let gitHubSrc:string;
+  switch (resolvedTheme) {
+    case "light":
+      emailSrc = "/images/email-black.png";
+      linkedInSrc = "/images/linkedin-black.svg";
+      gitHubSrc = "/images/github-black.svg";
+      break;
+    case "dark":
+      emailSrc = "/images/email.png";
+      linkedInSrc = "/images/linked-in.svg";
+      gitHubSrc = "/images/github.svg";
+      break;
+    default:
+      emailSrc = "/images/email.png";
+      linkedInSrc = "/images/linked-in.svg";
+      gitHubSrc = "/images/github.svg";
+      break;
+  }
 
   const handleOnClick = (): void => {
     setContactDropdownOpen((prev) => !prev);
@@ -38,7 +61,7 @@ export default function ContactDropdown(): JSX.Element {
                 className="flex items-end w-fit mb-2"
               >
                 <Image
-                  src={"/images/email.png"}
+                  src={emailSrc}
                   alt="Email icon"
                   width={50}
                   height={50}
@@ -52,8 +75,8 @@ export default function ContactDropdown(): JSX.Element {
                 className="flex items-end w-fit mb-2"
               >
                 <Image
-                  src={"/images/linked-in.svg"}
-                  alt="Email icon"
+                  src={linkedInSrc}
+                  alt="LinkedIn icon"
                   width={50}
                   height={50}
                 />
@@ -66,8 +89,8 @@ export default function ContactDropdown(): JSX.Element {
                 className="flex items-end w-fit"
               >
                 <Image
-                  src={"/images/github.svg"}
-                  alt="Email icon"
+                  src={gitHubSrc}
+                  alt="GitHub icon"
                   width={50}
                   height={50}
                 />
