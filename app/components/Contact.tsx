@@ -25,7 +25,7 @@ export default function Contact(): JSX.Element {
             height={32}
             className="sm:w-[50px]"
           />
-          <p className="ml-2 text-lg sm:text-2xl">David_Mason_@hotmail.co.uk</p>
+          <h2 className="ml-2 text-lg sm:text-2xl">David_Mason_@hotmail.co.uk</h2>
         </a>
         <a
           href="https://www.linkedin.com/in/davidianmason1702/"
@@ -34,12 +34,12 @@ export default function Contact(): JSX.Element {
         >
           <Image
             src={"/images/linked-in.svg"}
-            alt="Email icon"
+            alt="LinkedIn icon"
             width={32}
             height={32}
             className="sm:w-[50px]"
           />
-          <p className="ml-2 text-lg sm:text-2xl">DavidIanMason1702</p>
+          <h2 className="ml-2 text-lg sm:text-2xl">DavidIanMason1702</h2>
         </a>
         <a
           href="https://github.com/DayHikari"
@@ -48,12 +48,12 @@ export default function Contact(): JSX.Element {
         >
           <Image
             src={"/images/github.svg"}
-            alt="Email icon"
+            alt="Github icon"
             width={32}
             height={32}
             className="sm:w-[50px]"
           />
-          <p className="ml-2 text-lg sm:text-2xl">DayHikari</p>
+          <h2 className="ml-2 text-lg sm:text-2xl">DayHikari</h2>
         </a>
       </article>
       <LowerDivider />

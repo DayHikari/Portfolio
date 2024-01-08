@@ -9,7 +9,7 @@ export default function Logo(): JSX.Element {
       <Link href={"/"}>
         <Image
           src="/icon.png"
-          alt="Personal logo image"
+          alt="Personal logo"
           width="50"
           height="50"
         />
