@@ -12,12 +12,16 @@ export default function ProjectCard({
     projectDetail.id % 2 === 1
       ? "2xl:grid-cols-[2fr_1fr]"
       : "2xl:grid-cols-[1fr_2fr]";
+
   const textGrid: string =
     projectDetail.id % 2 === 1 ? "col-start-1" : "col-start-2";
+
   const imageGrid: string =
     projectDetail.id % 2 === 1 ? "col-start-2" : "col-start-1 row-start-1";
+
   const flexDirection: string =
     projectDetail.id % 2 === 1 ? "flex-row" : "flex-row-reverse";
+
   return (
     <>
       <article
@@ -32,15 +36,12 @@ export default function ProjectCard({
             <h2 className="text-5xl py-3 font-semibold">
               {projectDetail.title}
             </h2>
-            <ProjectButton url={projectDetail.url} id={projectDetail.id} />
           </div>
           <p className="text-lg sm:text-xl lg:text-2xl">
             {projectDetail.details}
           </p>
           <p className="py-3 italic">TechStack: {projectDetail.techStack}</p>
-          <span className="2xl:hidden">
-            <ProjectButton url={projectDetail.url} id={projectDetail.id} />
-          </span>
+          <ProjectButton url={projectDetail.url} id={projectDetail.id} />
         </div>
         <div
           className={`${imageGrid} flex flex-col justify-center items-center p-5`}
