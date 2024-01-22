@@ -58,6 +58,6 @@ export const homepageProjects: Array<Project> = [
         details: "A problem that Bootcampers in the School of Code face is that the intense pace of the course makes it difficult to revise and remember all of the informaion taught. Multiple topics are taught each day and it is inevitable that something will fall through the cracks and be forgotten. To address this problem, myself and my team developed Memory Echo: The Spaced Repetition App! Memory Echo allows users to input a topic/method name and description which will be stored in a PostgreSQL database. Memory Echo will then used the space repetition method to remind users of topics they need to study over an increasing gap in time, much like how an echo spaces out over time. The Frontend of the app was made using JavaScript, HTML and CSS while the backend uses Node.js, REST APIs and PostgreSQL. NOTE: The database takes a moment to spin up on the website, please refresh after a minute or two.",
         techStack: "JavaScript, HTML, CSS, PostgreSQL, Node.js, REST API",
         url: "https://memoryecho.vercel.app/",
-        photo: "/images/memory_echo.png"
+        photo: "/images/memory-echo.png"
     },
 ];

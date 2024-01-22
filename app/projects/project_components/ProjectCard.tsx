@@ -54,7 +54,7 @@ export default function ProjectCard({
             alt={`Photo of ${projectDetail.title}`}
             width={400}
             height={400}
-            className=" max-h-[500px] xs:max-w-[400px] xs:max-h-[600px] rounded-lg"
+            className="max-h-[500px] xs:max-w-[400px] xs:max-h-[600px] rounded-lg"
           />
         </div>
       </article>
