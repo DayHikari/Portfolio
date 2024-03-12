@@ -47,7 +47,7 @@ export default function ContactDropdown(): JSX.Element {
       <button
         onClick={() => handleOnClick()}
         ref={contactRef}
-        className="w-28 rounded-full p-2 hover:bg-orange-600 hover:text-white hover:dark:bg-zinc-600 hover:dark:text-orange-500"
+        className="w-fit rounded-full p-2 hover:bg-orange-600 hover:text-white hover:dark:bg-zinc-600 hover:dark:text-orange-500"
       >
         Contact{" "}
         {contactDropdownOpen ? <span>&uArr;</span> : <span>&dArr;</span>}
